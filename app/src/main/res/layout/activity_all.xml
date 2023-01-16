@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AllActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgBackDetail"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginBottom="15sp" />
+
+    <ImageView
+        android:id="@+id/imgBackDetail"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/border_style"
+        android:elevation="10sp"
+        android:padding="5sp"
+        android:src="@drawable/forward" />
+
+    <TextView
+        android:id="@+id/txtTitleAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/border_style"
+        android:fontFamily="@font/b_koodak_bold"
+        android:paddingHorizontal="18sp"
+        android:text="متن لیست نمایش داده شده"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

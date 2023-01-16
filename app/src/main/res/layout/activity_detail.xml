@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="18sp"
+    tools:context=".activities.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210sp"
+            android:layout_marginVertical="25sp"
+            android:elevation="30sp"
+            app:cardCornerRadius="25sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/i1" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtTitleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginBottom="8sp"
+            android:fontFamily="@font/b_koodak_bold"
+            android:gravity="center"
+            android:paddingHorizontal="15sp"
+            android:text="اصفهان زیبای من"
+            android:textColor="@color/textColor"
+            android:textDirection="rtl"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="250sp"
+            android:layout_height="1sp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5sp"
+            android:background="@color/textColor" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDescDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="15sp"
+                    android:layout_marginVertical="10sp"
+                    android:layout_marginBottom="8sp"
+                    android:fontFamily="@font/b_koodak_bold"
+                    android:gravity="right"
+                    android:justificationMode="inter_word"
+                    android:lineSpacingExtra="10sp"
+                    android:paddingHorizontal="15sp"
+                    android:text="اصفهان زیبای من"
+                    android:textColor="#5C5C5C"
+                    android:textDirection="rtl"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgBackDetail"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/border_style"
+        android:elevation="10sp"
+        android:padding="5sp"
+        android:src="@drawable/forward" />
+</RelativeLayout>
