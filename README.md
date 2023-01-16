@@ -3,11 +3,9 @@
 
 # *نرم افزار اصفهان زیبای من*
 
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) ![](https://img.shields.io/github/tag/pandao/editor.md.svg) ![](https://img.shields.io/github/release/pandao/editor.md.svg) ![](https://img.shields.io/github/issues/pandao/editor.md.svg) ![](https://img.shields.io/bower/v/editor.md.svg)
+## *معرفی مکان های معروف گردشگری اصفهان و معرفی غذاهای اصفهان*
 
-> *معرفی مکان های معروف گردشگری اصفهان و معرفی غذاهای اصفهان*
-
-###### Developer: Mohammad Sadra Boroumand :fa-laptop:
+### Developer: Mohammad Sadra Boroumand :fa-laptop:
 
 - IDE: Android Studio
 - Language: Java
@@ -15,12 +13,12 @@
 
 ------------
 
-for run:
+to run app:
 
-`clone repo`
-` install Android Studio`
-` download gradle`
-` run app`
+`1. clone repo`
+`2. install Android Studio`
+`3. download gradle`
+`4. run app`
 
 ------------
 
@@ -36,6 +34,9 @@ ScreenShots:
 
 ------------
 
-Preview:
-preview app link for android
-<a href="https://github.com/MsbSoft2/isf-Beautiful_api/raw/main/app/release/app-release.apk">Download Link Android App</a>
+## Preview:
+for preview android app Download 
+<a href="https://github.com/MsbSoft2/isf-Beautiful_api/raw/main/app/release/app-release.apk">
+here
+<img src="https://github.com/MsbSoft2/isf-Beautiful_api/raw/main/Screenshots/logo.png" width="120" />
+</a>
