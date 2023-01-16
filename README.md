@@ -5,13 +5,15 @@
 
 ## *معرفی مکان های معروف گردشگری اصفهان و معرفی غذاهای اصفهان*
 
-### Developer: Mohammad Sadra Boroumand :fa-laptop:
+### Developer: Mohammad Sadra Boroumand
 
 - IDE: Android Studio
 - Language: Java
 
 
 ------------
+
+# Run
 
 to run app:
 
@@ -38,5 +40,6 @@ ScreenShots:
 for preview android app Download 
 <a href="https://github.com/MsbSoft2/isf-Beautiful_api/raw/main/app/release/app-release.apk">
 here
+<br />
 <img src="https://github.com/MsbSoft2/isf-Beautiful_api/raw/main/Screenshots/logo.png" width="120" />
 </a>
