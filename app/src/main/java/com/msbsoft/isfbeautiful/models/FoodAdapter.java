@@ -53,6 +53,21 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
         textView.setText(food.title);
         Picasso.get().load(food.image).into(imageView);
 
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Log.i("sa ada", food.desc1);
+                Intent intent = new Intent(context1, DetailActivity.class);
+
+                intent.putExtra("title", food.title);
+                intent.putExtra("desc", food.desc1);
+                intent.putExtra("img", food.image);
+
+                context1.startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -72,22 +87,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
             txtAdapter = itemView.findViewById(R.id.txtAdapter);
             imgAdapter = itemView.findViewById(R.id.imgAdapter);
             cardAdapter = itemView.findViewById(R.id.cardAddapter);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Log.i("sa ada", food.desc1);
-                    Intent intent = new Intent(context1, DetailActivity.class);
-
-                    intent.putExtra("title", food.title);
-                    intent.putExtra("desc", food.desc1);
-                    intent.putExtra("img", food.image);
-
-                    context1.startActivity(intent);
-
-                }
-            });
 
         }
     }

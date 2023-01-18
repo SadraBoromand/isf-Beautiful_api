@@ -55,6 +55,21 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
         textView.setText(place.title);
         Picasso.get().load(place.images.get(0).url).into(imageView);
 
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Log.i("sa ada", place.title);
+                Intent intent = new Intent(context1, DetailActivity.class);
+
+                intent.putExtra("title", place.title);
+                intent.putExtra("desc", place.desc1);
+                intent.putExtra("img", place.images.get(0).url);
+
+                context1.startActivity(intent);
+
+            }
+        });
     }
 
     @Override
@@ -74,22 +89,6 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
             txtAdapter = itemView.findViewById(R.id.txtAdapter);
             imgAdapter = itemView.findViewById(R.id.imgAdapter);
             cardAdapter = itemView.findViewById(R.id.cardAddapter);
-
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Log.i("sa ada", place.title);
-                    Intent intent = new Intent(context1, DetailActivity.class);
-
-                    intent.putExtra("title", place.title);
-                    intent.putExtra("desc", place.desc1);
-                    intent.putExtra("img", place.images.get(0).url);
-
-                    context1.startActivity(intent);
-
-                }
-            });
 
         }
     }
