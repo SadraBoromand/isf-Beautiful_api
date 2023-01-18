@@ -13,14 +13,17 @@
 
 ------------
 
-# Run
+# Setting up 
 
-to run app:
+Steps to launch the software:
 
-`1. clone repo`
-`2. install Android Studio`
-`3. download gradle`
-`4. run app`
+`1. Install Android Studio`
+`2. Clone repository`
+```
+git clone https://github.com/MsbSoft2/isf-Beautiful_api.git
+```
+`3. Download gradle`
+`4. Run app`
 
 ------------
 
