@@ -25,7 +25,6 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
 
     Context context1;
     List<Place> places;
-    Place place;
 
     public PlaceAdapter(Context context1, List<Place> places) {
         this.context1 = context1;
@@ -46,7 +45,7 @@ public class PlaceAdapter extends RecyclerView.Adapter<PlaceAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        place = places.get(position);
+        Place place = places.get(position);
 
         TextView textView = holder.txtAdapter;
         ImageView imageView = holder.imgAdapter;

@@ -23,7 +23,6 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
 
     Context context1;
     List<Food> places;
-    Food food;
 
     public FoodAdapter(Context context1, List<Food> places) {
         this.context1 = context1;
@@ -44,7 +43,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        food = places.get(position);
+        Food food = places.get(position);
 
         TextView textView = holder.txtAdapter;
         ImageView imageView = holder.imgAdapter;
